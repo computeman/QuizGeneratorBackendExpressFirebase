@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+build/
+dist/
+
+# Debugging files
+.vscode/
+*.swp
+*.swo
+.idea/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Package lock files (optional: uncomment if you only use yarn or npm)
+# yarn.lock
+# package-lock.json
+
+# Coverage directory (if using testing frameworks like Jest)
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Logs and runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Lint cache (if using ESLint)
+.eslintcache
+
+# Testing files
+.nyc_output/
+.jest/
+
+# Miscellaneous
+*.tgz
+*.bak
+*.old
+
+# TypeScript (if applicable)
+*.tsbuildinfo
+
+# Editor-specific files
+*.iml
