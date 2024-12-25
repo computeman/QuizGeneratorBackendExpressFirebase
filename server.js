@@ -13,12 +13,10 @@ const corsOptions = {
   origin: "https://quiz-generator-gemini-ai.vercel.app",
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
+    credentials: true,
 };
 
 app.use(cors(corsOptions));
-
-app.options("*", cors(corsOptions));
 
 app.use(bodyParser.json());
 
