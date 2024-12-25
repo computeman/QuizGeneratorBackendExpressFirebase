@@ -9,14 +9,15 @@ import admin from "firebase-admin";
 dotenv.config();
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://quiz-generator-gemini-ai.vercel.app",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: "Content-Type,Authorization",
-  })
-);
-app.options("*", cors());
+const corsOptions = {
+  origin: "https://quiz-generator-gemini-ai.vercel.app",
+  methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+
+app.options("*", cors(corsOptions));
 
 app.use(bodyParser.json());
 
