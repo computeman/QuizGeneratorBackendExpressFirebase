@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 const corsOptions = {
-  origin: "https://quiz-generator-gemini-ai.vercel.app/quiz",
+  origin: "https://quiz-generator-gemini-ai.vercel.app",
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
